@@ -16,7 +16,9 @@ return new class extends Migration
             $table->string('assembly_type'); // Assembly type as a string
             $table->string('date'); // Date of the assembly
             $table->string('venue'); // Venue where the assembly will be held
-            $table->text('about')->nullable(); // About the assembly, as a text field (nullable)
+            $table->string('about')->nullable();
+            $table->string('name')->nullable();
+            $table->string('purok')->nullable();  // About the assembly, as a text field (nullable)
             $table->timestamps(); // Created at and Updated at timestamps
         });
     }
